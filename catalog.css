@@ -1,0 +1,189 @@
+/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    color: #000000;
+    position: relative;
+    background-image: url(./img/mini15.jpg);
+    background-size: cover; 
+    box-shadow: 200px 200px 500px 100px  #000000 inset;
+}
+h1{
+    
+    font-size: 40px;
+    font-family: "Quicksand", serif;
+    position: relative;
+    top: -30px;
+    text-align: center;
+    color: #ffffff;
+}
+h1 span{
+    color: #000000;
+        text-shadow: 0px 0px 5px rgb(164, 112, 216), 0px -5PX 5px rgb(20, 7, 32);
+}
+
+/* Header */
+header {
+ 
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+  z-index: 1000;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  height: 15%;
+}
+
+
+.BOOK{
+    position: absolute;
+    left: 34px;
+    top: 67%;
+}
+/* Filters Section */
+.filters-section {
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.searc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 600px;
+    display: flex;
+    gap: 10px;
+    padding: 100px;
+    padding-left: 100px;
+    
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background: #462727;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #241709;
+}
+
+
+/* Catalog Items */
+.catalog-items .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.book-item {
+    
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 zpx 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background:#eee;
+    color : #000000;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+}
+.book-item img {
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.book-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.book-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.book-item  {
+    background-color: #CCC;
+    border: 0px solid white;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 16px;
+    color: var(--light);
+    color: #000000;
+
+}
+img{
+    margin-top: 10px;
+    border: 0px solid black ;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn{
+    border: 0px solid #CCC;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 8px 16px;
+    background:linear-gradient(to right,blueviolet,rgb(192, 192, 38));
+    color: var(--light);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+    padding: 5px 30px;
+    margin: 10px;
+}
+.btn:hover {
+    transform: scale(1.1);
+    background:linear-gradient(to right,blueviolet,rgb(192, 192, 38));
+}
+/* Footer */
+.catalog-footer {
+    background: #333;
+    color: #eee;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.catalog-footer p {
+    margin: 0;
+}
